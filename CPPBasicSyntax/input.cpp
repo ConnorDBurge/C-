@@ -6,7 +6,7 @@ int main()
 {
     int age;
     cout << "Enter your age: ";
-    cin >> age; // to single character
+    cin >> age;
     cout << "You are " << age << " years old" << endl;
 
     string name;
