@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
+#include <sstream>
 using namespace std;
 
 // Functions
@@ -134,6 +136,23 @@ int main()
     }
 
     // pointer variables
-    int agge = 19;
-    int *pAgge = &agge;
+    // int agge = 19;
+    // int *pAgge = &agge;
+
+    // Vectors
+    vector<int> vecNumbers;
+    vecNumbers[0] = 10;
+    vecNumbers[1] = 20;
+    vecNumbers.push_back(30);
+    cout << vecNumbers[vecNumbers.size() - 1] << endl;
+    // Create a vector from string
+    string sentence = "This is a random string";
+    vector<string> sentenceVector;
+    stringstream ss(sentence);
+    string individual;
+    char space = ' ';
+    while (getline(ss, individual, space))
+    {
+        sentenceVector.push_back(individual);
+    }
 }
